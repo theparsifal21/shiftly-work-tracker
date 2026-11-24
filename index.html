@@ -30,7 +30,7 @@
                     <p class="muted" id="pageSubtitle">Your shifts and earnings, all in one place.</p>
                 </div>
                 <div class="header-actions"><button class="btn secondary" id="uploadBtn">↥ Upload
-                        schedules</button><button class="btn primary" id="addBtn">＋ Add shift</button></div>
+                        schedules</button><button class="btn secondary" id="pasteBtn">Paste schedule</button><button class="btn primary" id="addBtn">＋ Add shift</button></div>
             </header>
             <section id="dashboardView" class="view">
                 <div class="monthbar">
@@ -142,7 +142,7 @@
                         id="saveSettings">Save settings</button>
                 </section>
                 <section class="panel space-top">
-                    <h3>Data management</h3>
+                    <h3>Optional Claude image scanning</h3><p class="hint">Optional: screenshots are sent to Anthropic when a key is configured. The key is stored in this browser; use a restricted key and only on a trusted device. Built-in OCR requires no key.</p><div class="fields"><label>API key<input id="aiKeyInput" type="password" autocomplete="off"></label><label>Claude model ID<input id="aiModelInput" type="text" placeholder="Enter an available model ID"></label></div><div class="button-row"><button class="btn secondary" id="saveAiKey">Save AI settings</button><button class="btn secondary" id="clearAiKey">Remove key</button></div></section><section class="panel space-top"><h3>Data management</h3>
                     <p class="muted">Your information is stored in this browser, on this device. Export a backup to move
                         it elsewhere.</p>
                     <div class="button-row"><button class="btn secondary" id="backupBtn">↓ Download JSON
@@ -195,6 +195,7 @@
                     class="btn primary" id="confirmImport" disabled>Import selected shifts</button></div>
         </div>
     </div>
+    <div class="modal-backdrop hidden" id="pasteModal"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="pasteTitle"><div class="modal-top"><h2 id="pasteTitle">Paste schedule</h2><button class="close" data-close="pasteModal">×</button></div><p class="hint">Paste rows containing date, shift time and employee name.</p><textarea id="pasteArea" rows="8" style="width:100%;box-sizing:border-box;resize:vertical" placeholder="2026. november 24. 13:30-18:00 Employee name"></textarea><div class="modal-actions"><button class="btn secondary" data-close="pasteModal">Cancel</button><button class="btn primary" id="pasteGo">Review shifts</button></div></div></div>
     <div class="toast hidden" id="toast" role="status"></div>
     <script src="app.js" defer></script>
 </body>

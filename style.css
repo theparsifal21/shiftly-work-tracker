@@ -5,3 +5,4 @@
 .toast button{background:none;border:0;color:#fff;font-weight:800;text-decoration:underline;margin-left:14px;padding:0}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 @media(max-width:760px){.sidebar{position:fixed;top:auto;bottom:0;left:0;right:0;z-index:20;padding:6px 8px calc(6px + env(safe-area-inset-bottom));border-top:1px solid #272b3a;border-right:0}.brand{display:none}.sidebar nav{display:grid;grid-template-columns:repeat(4,1fr);gap:2px}.nav{flex-direction:column;gap:3px;font-size:11px;padding:8px 4px;align-items:center;text-align:center}.nav span{display:inline}.main{padding-bottom:96px}.toast{bottom:84px;left:15px;right:15px}}
+#pasteArea{font:inherit;background:#101521;color:#f5f5fc;border:1px solid #373d51;border-radius:8px;padding:12px}
