@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <meta name="theme-color" content="#101014">
     <title>SHIFT — Work & Pay</title>
-    <link rel="stylesheet" href="style.css?v=20261124-3">
-<style>.nav svg{width:22px!important;height:22px!important;max-width:22px;max-height:22px;flex:none;fill:none;stroke:currentColor}.mobile-brand{font-weight:800;font-size:26px}#pageEyebrow{display:none!important}@media(max-width:760px){.sidebar{height:auto!important;min-height:0!important;max-height:calc(74px + env(safe-area-inset-bottom,0px));padding:6px 5px calc(6px + env(safe-area-inset-bottom,0px))!important}.sidebar nav{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr));gap:3px}.sidebar .nav{height:54px;min-height:0!important;min-width:0;padding:5px 2px!important;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:4px;font-size:11px}.sidebar .nav span{display:block;font-size:10px}.main{padding-bottom:calc(96px + env(safe-area-inset-bottom,0px))!important}.nav[data-view=calendar]{order:1}.nav[data-view=dashboard]{order:2}.nav[data-view=shifts]{order:3}.nav[data-view=settings]{order:4}}</style></head>
+    <link rel="stylesheet" href="style.css?v=4">
+<style>.nav svg{width:22px!important;height:22px!important;max-width:22px;max-height:22px;flex:none;fill:none;stroke:currentColor}.mobile-brand{font-weight:800;font-size:26px}#pageEyebrow{display:none!important}@media(max-width:760px){.sidebar{height:auto!important;min-height:0!important;max-height:calc(74px + env(safe-area-inset-bottom,0px));padding:6px 5px calc(6px + env(safe-area-inset-bottom,0px))!important}.sidebar nav{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr));gap:3px}.sidebar .nav{height:54px;min-height:0!important;min-width:0;padding:5px 2px!important;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:4px;font-size:11px}.sidebar .nav span{display:block;font-size:10px}.main{padding-bottom:calc(96px + env(safe-area-inset-bottom,0px))!important}.nav[data-view=calendar]{order:1}.nav[data-view=dashboard]{order:2}.nav[data-view=shifts]{order:3}.nav[data-view=settings]{order:4}}</style><link rel="manifest" href="./manifest.json"><link rel="icon" href="./logo.svg"><meta name="apple-mobile-web-app-capable" content="yes"></head>
 
 <body>
     <div class="shell">
@@ -196,6 +196,6 @@
     <div class="modal-backdrop hidden" id="pasteModal"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="pasteTitle"><div class="modal-top"><h2 id="pasteTitle">Paste schedule</h2><button class="close" data-close="pasteModal">×</button></div><p class="hint">Paste rows containing date, shift time and employee name.</p><textarea id="pasteArea" rows="8" style="width:100%;box-sizing:border-box;resize:vertical" placeholder="2026. november 24. 13:30-18:00 Employee name"></textarea><div class="modal-actions"><button class="btn secondary" data-close="pasteModal">Cancel</button><button class="btn primary" id="pasteGo">Review shifts</button></div></div></div>
     <div class="toast hidden" id="toast" role="status"></div>
     <script src="app.js" defer></script>
-</body>
+<script>if("serviceWorker" in navigator)navigator.serviceWorker.register("./sw.js").catch(console.warn);</script></body>
 
 </html>
