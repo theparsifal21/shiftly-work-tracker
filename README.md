@@ -1,1 +1,0 @@
-# shiftly-work-tracker
